@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap");
+
+html,
+body,
+#root,
+.app,
+.content {
+  height: 100%;
+  width: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.auth-body {
+  background: #637d63!important;
+  margin: 25vh .5%
+}
+
+.auth-body h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.form {
+  max-width: 330px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.form .form__custom-button {
+  margin-top: 20px;
+}

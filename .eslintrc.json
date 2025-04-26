@@ -1,0 +1,66 @@
+{
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:react/jsx-runtime"
+  ],
+  "plugins": ["react", "import", "jsx-a11y"],
+  "rules": {
+    "react/prop-types": 0,
+    "indent": ["error", 2],
+    "linebreak-style": 0,
+    "max-len": [
+      "error", {
+        "code": 105,
+        "tabWidth": 2,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true,
+        "ignoreUrls": true
+      }
+    ],
+    "quotes": ["error", "single"],
+    "no-return-await": "error",
+    "prefer-const": ["error", {
+      "destructuring": "any",
+      "ignoreReadBeforeAssign": false
+    }],
+    "no-unused-vars": [2, 
+      {
+        "vars": "all",
+        "args": "after-used",
+        "ignoreRestSiblings": false
+      }
+    ],
+    "camelcase": [
+      "error", {
+          "ignoreImports": false,
+          "ignoreGlobals": false,
+          "ignoreDestructuring": false,
+          "properties": "always"
+      }
+    ]
+  },
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "parserOptions": {
+      "requireConfigFile": false
+    },
+    "babelOptions":{
+      "parserOpts": {
+        "plugin": ["jsx", "js"]    
+      }
+    }
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
